@@ -14,3 +14,23 @@ h2.education-course span::before {
   border-radius: 10px;
   background-color: #ba52dd;
 }
+div.subject-course {
+  margin-top: 100px;
+  margin-left: 72px;
+}
+div.subject-course span {
+  display: inline-flex;
+  background-color: #ba52dd;
+  border-radius: 20px;
+  color: white;
+  padding: 7px 24px;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+div.subject-course span:hover {
+  box-shadow: 0px 0px 5px 17px #7801ac inset;
+}
+div.subject-course span:first-child {
+  background-color: #7801ac;
+}
