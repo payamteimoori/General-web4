@@ -1,4 +1,16 @@
-i{
-    color: red;
-    font-size: 2em;
+h2.education-course {
+  text-align: center;
+}
+h2.education-course span {
+  position: relative;
+}
+h2.education-course span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 2px;
+  width: 60px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #ba52dd;
 }
