@@ -37,10 +37,14 @@ div.subject-course span:first-child {
 div.courses-cards{
   display: flex;
   justify-content: space-between;
+  direction: rtl;
 }
 div.courses-cards div.card{
   box-shadow: 0px 0px 30px 0px rgba(41, 51, 86, 0.1);
   width: 25%;
-  padding: 8px;
+  padding: 15px;
   border-radius: 30px;
+}
+div.ui-ux-img img,div.front-end-img img,div.back-end-img img{
+  width: 100%;
 }
