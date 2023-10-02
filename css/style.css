@@ -34,3 +34,13 @@ div.subject-course span:hover {
 div.subject-course span:first-child {
   background-color: #7801ac;
 }
+div.courses-cards{
+  display: flex;
+  justify-content: space-between;
+}
+div.courses-cards div.card{
+  box-shadow: 0px 0px 30px 0px rgba(41, 51, 86, 0.1);
+  width: 25%;
+  padding: 8px;
+  border-radius: 30px;
+}
