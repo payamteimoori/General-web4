@@ -9,12 +9,15 @@ h2.education-course span::before {
   position: absolute;
   top: 40px;
   left: 2px;
-  width: 60px;
+  right: 0px;
   height: 2px;
   border-radius: 10px;
   background-color: #ba52dd;
 }
 div.subject-course {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 100px;
   margin-left: 80px;
 }
@@ -43,7 +46,7 @@ div.courses-cards {
 }
 div.courses-cards div.card {
   box-shadow: 0px 0px 30px 10px rgba(41, 51, 86, 0.1);
-  width: 27%;
+  width: 26%;
   padding: 15px;
   margin: 0px -55px;
   border-radius: 30px;
@@ -58,57 +61,99 @@ div.front-end-header,
 div.ui-ux-header {
   text-align: center;
 }
-div.back-end-header h3 span{
-color: rgba(255, 199, 0, 1);
+div.back-end-header h3 span {
+  color: rgba(255, 199, 0, 1);
 }
-div.front-end-header h3 span{
+div.front-end-header h3 span {
   color: rgba(90, 87, 255, 1);
 }
-div.ui-ux-header h3 span{
- color: rgba(227, 43, 1, 1);
+div.ui-ux-header h3 span {
+  color: rgba(227, 43, 1, 1);
 }
-div.back-end-header p,div.front-end-header p,div.ui-ux-header p{
+div.back-end-header p,
+div.front-end-header p,
+div.ui-ux-header p {
   color: rgba(0, 0, 0, 0.6);
-  line-height: 25px;
+  line-height: 27px;
   border-bottom: 1px solid rgba(237, 237, 237, 1);
   padding-bottom: 20px;
-  margin: 0px 50px;
+  margin: 0px 27px;
 }
-div.back-end-cost, div.front-end-cost,div.ui-ux-cost{
+div.back-end-cost,
+div.front-end-cost,
+div.ui-ux-cost {
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 28px;
+  margin-right: 28px;
 }
-div.ui-ux-card{
-  position: relative;
+div.back-end-cost span,
+div.front-end-cost span,
+div.ui-ux-cost span {
+  color: rgba(51, 51, 51, 0.5);
 }
-div.ui-ux-card::before{
-  content: "\f104";
-  font-weight: 900;
-  font-family: "Font Awesome 6 Free";
-  position: absolute;
-  top: 300px;
-  left: -70px;
-  font-size: 1.5em;
-  color: white;
-  line-height: 50px;
+div.back-end-during-course,
+div.front-end-during-course,
+div.ui-ux-during-course {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+div.back-end-during-course span,
+div.front-end-during-course span,
+div.ui-ux-during-course span {
+  background-color: rgba(239, 239, 239, 1);
+  color: rgba(187, 187, 187, 1);
+  padding: 5px 25px;
+  border-radius: 30px;
+  font-size: 0.8em;
+}
+div.back-end-during-course span:last-child,
+div.front-end-during-course span:last-child,
+div.ui-ux-during-course span:last-child {
+  padding: 5px 10px;
+}
+div.back-end-buy-course,
+div.front-end-buy-course,
+div.ui-ux-buy-course {
+  margin-top: 20px;
   text-align: center;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(186, 82, 221, 1);
-  border-radius: 50%;
+}
+div.back-end-buy-course button,
+div.front-end-buy-course button,
+div.ui-ux-buy-course button {
+  border: none;
+  background-color: #ba52dd;
+  color: white;
+  font-size: 0.9em;
+  padding: 9px 100px;
+  border-radius: 30px;
+  position: relative;
+  transition: all 0.3s;
   cursor: pointer;
 }
-div.ui-ux-card::before:hover{
-  background-color: rgba(120, 1, 172, 1);
+div.back-end-buy-course button:hover,
+div.front-end-buy-course button:hover,
+div.ui-ux-buy-course button:hover {
+  background-color: #7801ac;
 }
-div.back-end-card{
+div.back-end-buy-course button::after,
+div.front-end-buy-course button::after,
+div.ui-ux-buy-course button::after {
+  content: "\f07a";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: relative;
+  font-size: 0.8em;
+  left: -7px;
+}
+div.back-end-card {
   position: relative;
 }
-div.back-end-card::before{
-  content: "\f105";
-  font-weight: 900;
-  font-family: "Font Awesome 6 Free";
+div.back-end-card i.fa-angle-right {
   position: absolute;
   top: 300px;
   right: -70px;
@@ -121,37 +166,15 @@ div.back-end-card::before{
   background-color: rgba(186, 82, 221, 1);
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.5s;
 }
-div.back-end-card::before:hover{
-  background-color: rgba(120, 1, 172, 1);
+div.back-end-card i.fa-angle-right:hover {
+  box-shadow: 0px 0px 0px 30px rgba(120, 1, 172, 1) inset;
 }
-
-/* div.back-end-card{
+div.ui-ux-card {
   position: relative;
 }
-div.back-end-card i.fa-angle-right{
-  position: absolute;
-  top: 300px;
-  right: -70px;
-  font-size: 1.5em;
-  color: white;
-  line-height: 50px;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(186, 82, 221, 1);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all .5s;
-}
-div.back-end-card i.fa-angle-right:hover{
-  background-color: rgba(120, 1, 172, 1);
-  box-shadow: 0px 0px 0px 30px rgba(120, 1, 172, 1) inset ;
-}
-div.ui-ux-card{
-  position: relative;
-}
-div.ui-ux-card i.fa-angle-left{
+div.ui-ux-card i.fa-angle-left {
   position: absolute;
   top: 300px;
   left: -70px;
@@ -164,10 +187,21 @@ div.ui-ux-card i.fa-angle-left{
   background-color: rgba(186, 82, 221, 1);
   border-radius: 50%;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
 }
-div.ui-ux-card i.fa-angle-left:hover{
-  background-color: rgba(120, 1, 172, 1);
-  box-shadow: 0px 0px 0px 30px rgba(120, 1, 172, 1) inset ;
-
-} */
+div.ui-ux-card i.fa-angle-left:hover {
+  box-shadow: 0px 0px 0px 30px rgba(120, 1, 172, 1) inset;
+}
+img.vector-left{
+position: absolute;
+left: 0px;
+top: 415px;
+z-index: -2;
+}
+img.vector-right{
+  position: absolute;
+  right: 0px;
+  top: 415px;
+  z-index: -2;
+  transform: rotateY(180deg);
+}
