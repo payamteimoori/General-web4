@@ -1,7 +1,3 @@
-/* 
-reset css
-*/
-
 html,
 body,
 div,
@@ -134,12 +130,7 @@ table {
 }
 
 
-/*
- start style 
-*/
-
-
-.body {
+body {
     direction: rtl;
 }
 
@@ -147,11 +138,6 @@ table {
     padding: 0 72px;
 
 }
-
-
-/*
- cart color class in figma 
- */
 
 
 .blue-g {
@@ -236,11 +222,6 @@ table {
 }
 
 
-/*
- start carts in bottom heder 
- */
-
-
 .hb-cart {
     width: 306px;
     height: 286px;
@@ -255,11 +236,6 @@ table {
 .hb-cart:hover{
     box-shadow: 0px 0px 5px 3px rgba(41, 51, 86, 0.10);
 }
-
-
-/*
- carts hder 
- */
 
 
 .hb-cart-heder {
@@ -285,14 +261,6 @@ table {
     margin-right: 20px;
 }
 
-
-/*
-
- carts footer 
-
- */
-
-
 .hb-cart-foter {
     display: flex;
     justify-content: center;
@@ -308,14 +276,6 @@ table {
     font-weight: 400;
     line-height: 30px;
 }
-
-
-/*
-
- media tags
-
-*/
-
 
 @media only screen and (max-width: 1120px) {
     .hb-bottom {
@@ -336,10 +296,208 @@ table {
 }
 
 
-/*
+/* start css mohammad naghavi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- end style heder bottom 
+:root {
+    --black: #333333;
+    --blackLight: #00000099;
+    --purple: #BA52DD;
+    --purpleLight: #EFEFEF;
+    --gray: #BBBBBB;
+    --grayLight: #EDEDED;
+    --graylighter: #CFCFCF;
+}
 
+a {
+    text-decoration: none;
+}
+
+.blog_parent_title{
+    margin-bottom: 45px;
+}
+
+.blog_title::after {
+    content: '';
+    background: var(--purple);
+    width: 70px;
+    height: 2px;
+    display: block;
+    border-radius: 2px;
+}
+
+.blog_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card_custom {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 2px 2px 9px #ccc;
+}
+
+.img_custom {
+    width: 315px;
+    margin-top: 15px;
+    border-radius: 45px;
+}
+
+.card_title_custom::before {
+    border-radius: 2px;
+    content: '';
+    background: var(--purple);
+    width: 8%;
+    height: 2px;
+    margin-left: 4px;
+}
+
+.card_title_custom::after {
+    border-radius: 2px;
+    content: '';
+    background: var(--purple);
+    width: 8%;
+    height: 2px;
+    margin-right: 4px;
+}
+
+.card_text_custom {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.subject_educational,
+.subject_readable {
+    background: var(--purpleLight) !important;
+    color: var(--gray);
+    padding: 4px 20px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.border_bottom_custom::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-radius: 2px;
+    background: var(--grayLight);
+    margin-top: 10px;
+    display: block;
+}
+
+.time_blogs_text {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--graylighter);
+}
+
+.read_more_link {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--purple);
+}
+
+.arrow_left {
+    width: 11px;
+    color: var(--purple);
+}
+
+.read_more_link:hover{
+    color: var(--purple);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dot_item1,
+.dot_item2,
+.dot_item3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ECECEC;
+    cursor: pointer;
+}
+
+.dot_item1,
+.dot_item2 {
+    margin-left: 3px;
+}
+
+.dot_item2 {
+    background: var(--purple);
+}
+
+
+
+@media only screen and (min-width: 300px) {
+    .img_custom {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .card_title_custom::before {
+        width: 8%;
+    }
+
+    .card_title_custom::after {
+        width: 8%;
+    }
+}
+
+
+@media only screen and (min-width: 540px) {
+
+    .card_title_custom {
+
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .card_title_custom::before {
+        width: 8%;
+    }
+
+    .card_title_custom::after {
+        width: 8%;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .card_title_custom {
+
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .card_title_custom::before {
+        width: 8%;
+    }
+
+    .card_title_custom::after {
+        width: 8%;
+    }
+}
+/* etart css mohammad naghavi */
+=======
 */
 
 
